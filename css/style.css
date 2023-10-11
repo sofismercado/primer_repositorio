@@ -1,0 +1,298 @@
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Kiwi Maru', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Zilla Slab Highlight', serif;
+font-family: 'Montserrat', sans-serif;*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*-------------configuracion general-------------------*/ 
+h1{
+   
+    font-family: 'Dancing Script', cursive;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding: 60px;
+    font-size: 80px;
+    font-style: oblique;
+    text-shadow: 3px 1px 1px rgb(3, 3, 3);
+    background-color: color-mix(in srgb, white 30%, pink 20%);
+    
+   
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    border: 10px ;
+    padding: 0x;
+    margin: 10px;
+    text-shadow: 3px 1px 1px black;
+
+}
+
+
+.borde_abajo{
+    border-bottom: 5px double white;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* clases no me doy cuenta de porque no puedo cambiar el color asi*/
+.barra_navegacion{
+    color: antiquewhite;
+}
+
+.claseBasico{
+    border: 10px solid black;
+    padding: 10px;
+    margin: 30px;
+    
+}
+.boton{
+    border:black  3px solid ;
+    margin:20px ;
+    padding: 1px ;
+    background-color: azure;
+
+}
+.titulo_dos{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    border: 10px ;
+    padding: 0x;
+    margin: 10px;
+    text-shadow: 3px 1px 1px black;
+
+}
+
+.mapa{
+    margin: 10px;
+    padding: 30px;
+}
+
+
+
+.img-uno{background-image: url('../imagenes/monumento_para_fondo_final.png')}
+
+
+.alineacion{
+display: inline
+font size;
+}
+
+.bordes_redondeados{
+     border-style: solid 20px rgba(39, 37, 37, 0.993);
+    border-radius: 30px;
+    
+}
+.fondo_general{
+    background-image: url(../imagenes/lapcho_monumento_copia.png);
+   background-size: cover;
+
+}
+.pie{
+    background-color: burlywood;
+}
+/*----------------------------- index ----------------------------------*/
+a{
+    font-family: 'Kiwi Maru', serif
+}
+.boton_distinto{
+    border: blue 3px solid ;
+    margin:20px ;
+    padding: 1px ;
+    background-color: aliceblue;
+
+}
+.boton_negro{
+    
+    border: black solid ;
+    margin:20px ;
+    padding: 1px ; 
+    background-color: aliceblue;
+}
+
+
+
+.menu{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 3rem;
+    
+} 
+
+
+
+
+.boton_index{
+    color: rgb(172, 17, 102);
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    text-decoration: none;
+    padding: 2rem;
+    display: grid;
+    justify-items: end;
+    background-color: color-mix(in srgb, lightblue  10%, pink 20%);
+    
+ }
+    /*------------------------------------#body_lugares--------------------{
+    background-image: url(../imagenes/fondoHistoria.png);
+    background-repeat: repeat;
+
+}*/
+
+body div main h1{
+    color: rgb(255, 249, 249);
+}
+
+
+.orden_lugares{
+    display: grid;
+    grid-template-columns: 1fr;
+   
+    
+}
+
+.titulo_centrado{
+   display: grid;
+  justify-self: center;
+
+    
+}
+
+.imagen_derecha{
+   position: relative;
+  left: 30%;
+}
+
+.orden_izquierda{
+    display: grid;
+    justify-self: end;
+}
+/*--------------------cultura-----------------------*/
+
+.clase_cultura{
+    border: 10px solid white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.parallax_cultura{
+    background-image: url(../imagenes/titulo_cultura.png);
+    height: 200px;
+    background-size: cover;
+    background-position: 0px -80px;
+    margin-bottom: 50px;
+}
+
+.orden{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+@media (max-width: 576px){
+    .orden{
+        display: grid;
+        grid-template-columns:1fr;
+    
+    }
+}
+
+/*----------------------rosarinos----------------------*/
+#body_rosarinos{
+   background-color: crimson;
+
+}
+
+.parallax_rosarinos{
+    background-image: url(../imagenes/titulo_personajes.png);
+    height: 200px;
+    background-size: cover;
+    background-position: 0px -80px;
+    margin-bottom: 50px;
+}
+
+.clase_rosarinos{
+    border: 10px solid white;
+    padding: 10px;
+    margin: 10px;
+    
+    
+}
+
+
+.orden_rosarinos{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    
+}
+
+@media(max-width:576px){
+    .orden_rosarinos{
+        display: grid;
+        grid-template-columns:1fr;
+        justify-items: center;
+    
+    }
+}
+
+.parrafos_rosarinos{
+    padding: 30px 10px 20px;
+    border: 10px solid black; 
+    margin:10%;
+    background-color: beige;
+    font-family: 'Montserrat', sans-serif;
+   text-shadow: 3px 1px 1px white;
+    
+}
+
+
+.borde_abajo_rosarino{
+    border-top:  5px solid white;
+    padding-top: 10px;
+}
+
+
+/*-----------------------gastronomia---------------------*/
+#body_gastronomia{
+    background-color: darkcyan;
+    
+}
+.parallax_gastronomia{
+    background-image: url(../imagenes/fondo_gastronomia.png);
+    height: 200px;
+    background-size: cover;
+    background-position: 0px -80px;
+    margin-bottom: 50px;
+}
+
+.clase_gastronomia{
+    border: 10px solid olive;
+    padding: 0x;
+    margin: 10px;
+}
+
+/*----------------nav-------------*/
+.nva_mia{
+    background-color: color-mix(in srgb, white 30%, pink 50%);
+}
+
+/*<img class="clase_rosarinos" src="../imagenes/messi.png" alt="">
+            <a class="boton_negro" href="http://">Lionel Messi</a>
+            <img class="clase_rosarinos" src="../imagenes/che.png" alt="">
+            <a class="boton_negro" href="http://">Ernesto Guevara</a>
+            <img class="clase_rosarinos" src="../imagenes/lucha.png" alt="">
+            <a class="boton_negro" href="http://">Luciana Aymar</a>
+            <img class="clase_rosarinos" src="../imagenes/olmedo.png" alt="">
+            <a class="boton_negro" href="http://">Alberto OLmedo</a>
+            <img class="clase_rosarinos" src="../imagenes/dimaria.png" alt="">
+            <a class="boton_negro" href="http://">Angel DiMaria</a>
+            <img class="clase_rosarinos" src="../imagenes/fontanarrosa.png" alt="">
+            <a class="boton_negro" href="http://">Roberto Fontanarrosa</a>
+            <img class="clase_rosarinos" src="../imagenes/amaloa.png" alt="">
+            <a class="boton_negro" href="http://">Amalia Figueredo</a>  */
