@@ -14,12 +14,14 @@ h1{
    
     font-family: 'Dancing Script', cursive;
     color:rgb(255, 255, 255);
-    text-align: center;
-    padding: 60px;
+    text-align: left;
+    padding: 25px;
     font-size: 80px;
     font-style: oblique;
     text-shadow: 3px 1px 1px rgb(3, 3, 3);
-    background-color: color-mix(in srgb, white 30%, pink 20%);
+   
+  
+    /*background-color: color-mix(in srgb, white 30%, pink 20%);*/ 
     
    
 }
@@ -35,11 +37,7 @@ h2{
 }
 
 
-.borde_abajo{
-    border-bottom: 5px double white;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
+
 
 /* clases no me doy cuenta de porque no puedo cambiar el color asi*/
 .barra_navegacion{
@@ -69,131 +67,188 @@ h2{
 
 }
 
-.mapa{
-    margin: 10px;
-    padding: 30px;
-}
-
-
-
-.img-uno{background-image: url('../imagenes/monumento_para_fondo_final.png')}
-
-
-.alineacion{
-display: inline
-font size;
-}
 
 .bordes_redondeados{
-     border-style: solid 20px rgba(39, 37, 37, 0.993);
+    border-style: solid 20px rgba(39, 37, 37, 0.993);
     border-radius: 30px;
     
 }
-.fondo_general{
-    background-image: url(../imagenes/lapcho_monumento_copia.png);
-   background-size: cover;
+
+.parallax{
+   
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height:30rem;
+	max-width: 100%;
+	position: relative
 
 }
-.pie{
-    background-color: burlywood;
+.parallax_sin_descripcion{
+   
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height:10rem;
+	max-width: 100%;
+	position: relative
+
+}
+.fondo_titulo_sin_descripcion{
+    background-image: url(../imagenes/lapcho_monumento_copia.png);
+    background-size: cover;
+
+}
+.resaltar_pagina{
+    text-decoration: underline;
+}
+.caja_traslate{
+    transition: all .2s;
+}
+.caja_traslate:hover{
+    transform: scale(1.1);
 }
 /*----------------------------- index ----------------------------------*/
 a{
     font-family: 'Kiwi Maru', serif
 }
-.boton_distinto{
-    border: blue 3px solid ;
-    margin:20px ;
-    padding: 1px ;
-    background-color: aliceblue;
-
+.fondo_original{
+    background-image: url(../imagenes/lapcho_monumento_copia.png);
 }
-.boton_negro{
-    
-    border: black solid ;
-    margin:20px ;
-    padding: 1px ; 
-    background-color: aliceblue;
-}
-
-
-
 .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     margin-top: 2rem;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    row-gap: 3rem;
-    
+    margin-bottom: 2rem;   
 } 
-
-
+.parrafo_index{
+  
+    font-family: 'Raleway', sans-serif;
+    color: white; 
+    margin: auto; 
+    padding: 50px;
+   margin: 50ppx;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 3px 1px 3px black;
+    
+}
 
 
 .boton_index{
-    color: rgb(172, 17, 102);
+    color: rgb(235, 44, 108);
     font-family: 'Raleway', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    height: 250px;
+    width: 250px;
     text-decoration: none;
-    padding: 2rem;
+    padding-top: 35%;
     display: grid;
-    justify-items: end;
+    box-shadow: 5px 5px 10px 5px rgb(211, 117, 175);
     background-color: color-mix(in srgb, lightblue  10%, pink 20%);
+    transition: all 2s;
+    border-radius: 50%;
+}
+.fondo_titulo_sin_descripcion_index{
+    background-image: url(../imagenes/lapcho_monumento_copia.png);
+    background-size: cover;
     
- }
-    /*------------------------------------#body_lugares--------------------{
-    background-image: url(../imagenes/fondoHistoria.png);
-    background-repeat: repeat;
+}
 
+@media (max-width: 576px){
+    .fondo_titulo_sin_descripcion_index{
+        display: grid;
+        grid-template-columns:1fr;
+    
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+    }
+    .boton_index{
+        color: rgb(235, 44, 108);
+        font-family: 'Raleway', sans-serif;
+        font-size:20px;
+        text-align: center;
+        height: 100px;
+        width: 150px;
+        text-decoration: none;
+        padding-top: 10%;
+        display: grid;
+        box-shadow: 5px 5px 10px 5px rgb(211, 117, 175);
+        background-color: color-mix(in srgb, lightblue  10%, pink 20%);
+        transition: all 2s;
+        border-radius: 50%;;  
+        margin: auto;
+        margin-bottom: 10px;
+        
+    }
+}
+
+/*------------------------------------#body_lugares--------------------{
+  
 }*/
 
 body div main h1{
     color: rgb(255, 249, 249);
 }
-
-
 .orden_lugares{
     display: grid;
-    grid-template-columns: 1fr;
-   
-    
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px;
 }
-
 .titulo_centrado{
-   display: grid;
-  justify-self: center;
-
-    
-}
-
-.imagen_derecha{
-   position: relative;
-  left: 30%;
-}
-
-.orden_izquierda{
     display: grid;
-    justify-self: end;
+   justify-self: center;
 }
-/*--------------------cultura-----------------------*/
+.titulo_tarjetas_lugares{
+    font-family: 'Dancing Script', cursive;
+    font-size: 70x;  
+}
+.parrafo_tarjetas_lugares{
+   color: rgb(0, 0, 0);
+      
+}
+.personalizar_tarjetas{
+    background-color: rgb(216, 133, 160);
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px 5px rgb(56, 50, 54);
+}
+@media (max-width: 576px){
+    .orden_lugares{
+        display: grid;
+        grid-template-columns:1fr;
+       align-self: center;
+    
+    }
+   
+}
 
+/*--------------------cultura-----------------------*/
+.titulo_secundario_cultura{
+    background-color: color-mix(in srgb, rgb(177, 83, 135) 50%, rgb(255, 255, 255) 30%);
+    margin: 0px;
+    padding-left: 50px;
+}
 .clase_cultura{
     border: 10px solid white;
     padding: 10px;
     margin: 10px;
 }
-
-.parallax_cultura{
-    background-image: url(../imagenes/titulo_cultura.png);
-    height: 200px;
-    background-size: cover;
-    background-position: 0px -80px;
-    margin-bottom: 50px;
-}
-
 .orden{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     
+}
+.parrafo_cultura{
+    padding: 50px;
+    color: black;
+    font-size: 30px;
 }
 @media (max-width: 576px){
     .orden{
@@ -202,36 +257,19 @@ body div main h1{
     
     }
 }
-
 /*----------------------rosarinos----------------------*/
-#body_rosarinos{
-   background-color: crimson;
-
-}
-
-.parallax_rosarinos{
-    background-image: url(../imagenes/titulo_personajes.png);
-    height: 200px;
-    background-size: cover;
-    background-position: 0px -80px;
-    margin-bottom: 50px;
-}
-
 .clase_rosarinos{
-    border: 10px solid white;
+    border: 5px ;
     padding: 10px;
-    margin: 10px;
-    
+    margin: 5px;
+    box-shadow: 5px 5px 10px rgb(126, 37, 37);
     
 }
-
-
 .orden_rosarinos{
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     
 }
-
 @media(max-width:576px){
     .orden_rosarinos{
         display: grid;
@@ -240,45 +278,99 @@ body div main h1{
     
     }
 }
-
 .parrafos_rosarinos{
-    padding: 30px 10px 20px;
-    border: 10px solid black; 
-    margin:10%;
-    background-color: beige;
+    padding: 30px 50px 20px;
+    border: 5px; 
+    margin:20px;
+    background-color: rgb(104, 73, 100);
     font-family: 'Montserrat', sans-serif;
-   text-shadow: 3px 1px 1px white;
-    
+   text-shadow: 3px 1px 1px rgb(8, 8, 8);
+   box-shadow: 5px 5px 10px rgb(75, 72, 72);
+   transform: skew(-10deg)
+
+   
 }
-
-
+p{
+    color: rgb(219, 169, 217);
+}
 .borde_abajo_rosarino{
     border-top:  5px solid white;
     padding-top: 10px;
 }
-
-
+.modificacion_rosarinos_izquierda{
+    background-color: color-mix(in srgb, rgb(168, 62, 168) 20%, rgb(107, 74, 79) 30%);
+    margin: 20px;
+    box-shadow: 5px 5px 10px rgb(75, 72, 72);
+    transform: skew(-10deg)
+}
 /*-----------------------gastronomia---------------------*/
-#body_gastronomia{
-    background-color: darkcyan;
-    
-}
-.parallax_gastronomia{
-    background-image: url(../imagenes/fondo_gastronomia.png);
-    height: 200px;
-    background-size: cover;
-    background-position: 0px -80px;
-    margin-bottom: 50px;
-}
-
 .clase_gastronomia{
     border: 10px solid olive;
     padding: 0x;
     margin: 10px;
+}
+.modificacion_carrusel{
+    width: 500px;
+    display: flex;
+    margin:auto;
+    box-shadow:5px 5px 10px rgb(48, 46, 46); 
+    margin-bottom: 50px;
+    
+}
+.tamaño_imagen_carrusel{
+    width: 400px;
+    height: 300px;
+}
+.parrafo_gastronomia{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(22, 21, 22); 
+    padding: 50px;
+   margin: 50ppx;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    
 }
 
 /*----------------nav-------------*/
 .nva_mia{
     background-color: color-mix(in srgb, white 30%, pink 50%);
 }
+/*------------footer------------*/
+.pie{
+    background-color: rgb(175, 114, 160);
+    
+}
+.orden_footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
+.mapa{
+    margin: 30px;
+    box-shadow: 3px 3px 3px black;
+}
+.orden_contactos{
+    color: black;
+}
+
+.pocision_contacto{
+    text-align: end;
+    padding: 50px;
+    
+}
+.lista{
+    list-style: none;
+}
+@media (max-width: 576px){
+    .orden_footer{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .pocision_contacto{
+       text-align: start;
+        padding: 30px;
+        
+    }
+}
