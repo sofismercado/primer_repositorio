@@ -1,0 +1,36 @@
+.pie{
+    background-color: rgb(175, 114, 160);
+    
+}
+.orden_footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mapa{
+    margin: 30px;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+}
+.orden_contactos{
+    color: black;
+}
+
+.pocision_contacto{
+    text-align: end;
+    padding: 50px;
+    
+}
+.lista{
+    list-style: none;
+}
+@media (max-width: 576px){
+    .orden_footer{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .pocision_contacto{
+       text-align: start;
+        padding: 30px;
+        
+    }
+}

@@ -1,0 +1,94 @@
+a{
+    font-family: 'Kiwi Maru', serif
+}
+.fondo_original{
+    background-image: url(../imagenes/lapcho_monumento_copia.png);
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;   
+} 
+.parrafo_index{
+    font-family: 'Raleway', sans-serif;
+    color: $bg-wh;
+    margin: auto; 
+    padding: 50px;
+   margin: 50ppx;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 3px 1px 3px black; 
+}
+.boton_index{
+    color: $bg-vio;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    height: 250px;
+    width: 250px;
+    text-decoration: none;
+    padding-top: 35%;
+    display: grid;
+    box-shadow: 5px 5px 10px 5px rgb(211, 117, 175);
+    background-color: color-mix(in srgb, lightblue  10%, pink 20%);
+    transition: all 2s;
+    border-radius: 50%;
+}
+.fondo_titulo_sin_descripcion_index{
+    background-image: url(../imagenes/lapcho_monumento_copia.png);
+    background-size: cover;
+    
+}
+.formulario{
+    background-color: $bg-pink;
+    display: grid;
+    justify-self: center;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 1px 1px rgb(0, 0, 0);
+    border: 10px 
+}
+.margen_formulario{
+    margin: 20px;
+
+}
+.tamanio_ancho{
+    width: 30%;
+    display: grid;
+    justify-self: center;
+}
+
+@media (max-width: 576px){
+    .fondo_titulo_sin_descripcion_index{
+        display: grid;
+        grid-template-columns:1fr;
+    
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+    }
+    .boton_index {
+        color: $bg-vio;
+        font-family: "Raleway", sans-serif;
+        font-size: 20px;
+        text-align: center;
+        height: 100px;
+        width: 150px;
+        text-decoration: none;
+        padding-top: 10%;
+        display: grid;
+        box-shadow: 5px 5px 10px 5px rgb(211, 117, 175);
+        background-color: color-mix(in srgb, lightblue 10%, pink 20%);
+        transition: all 2s;
+        border-radius: 50%;
+        margin: auto;
+        margin-bottom: 10px;
+      }
+} 

@@ -1,0 +1,27 @@
+.titulo_secundario_cultura{
+    background-color: color-mix(in srgb, rgb(177, 83, 135) 50%, rgb(255, 255, 255) 30%);
+    margin: 0px;
+    padding-left: 50px;
+}
+.clase_cultura{
+    border: 10px solid $bg-wh;
+    padding: 10px;
+    margin: 10px;
+}
+.orden{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.parrafo_cultura{
+    padding: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+@media (max-width: 576px){
+    .orden{
+        display: grid;
+        grid-template-columns:1fr;
+    
+    }
+}

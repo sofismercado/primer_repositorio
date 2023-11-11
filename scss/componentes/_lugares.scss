@@ -1,0 +1,32 @@
+.orden_lugares{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px;
+}
+.titulo_centrado{
+    display: grid;
+   justify-self: center;
+}
+.titulo_tarjetas_lugares{
+    font-family: 'Dancing Script', cursive;
+    font-size: 70x;  
+}
+.parrafo_tarjetas_lugares{
+   color:$p_bl;
+      
+}
+.personalizar_tarjetas{
+    background-color: $bg-pink;
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px 5px rgb(56, 50, 54);
+}
+
+@media (max-width: 576px){
+    .orden_lugares{
+        display: grid;
+        grid-template-columns:1fr;
+       align-self: center;
+    
+    }
+   
+}

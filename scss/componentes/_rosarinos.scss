@@ -1,0 +1,50 @@
+.clase_rosarinos{
+    border: 5px ;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 5px 5px 10px rgb(126, 37, 37);
+    
+}
+.orden_rosarinos{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    
+}
+@media(max-width:576px){
+    .orden_rosarinos{
+        display: grid;
+        grid-template-columns:1fr;
+        justify-items: center;
+       
+    }
+   
+    
+}
+.parrafos_rosarinos{
+    padding: 30px 50px 20px;
+    border: 5px; 
+    margin:20px;
+    width: 90%;
+   background-color:$bg-old;
+    font-family: "Montserrat", sans-serif;
+   text-shadow: 3px 1px 1px rgb(8, 8, 8);
+   box-shadow: 5px 5px 10px rgb(75, 72, 72);
+   
+    
+   
+}
+p{
+    color: $bg-pink;
+}
+.borde_abajo_rosarino{
+    border-top:  5px solid rgb(255, 255, 255);
+    padding-top: 10px;
+}
+.modificacion_rosarinos_izquierda{
+    background-color: color-mix(in srgb, rgb(168, 62, 168) 20%, rgb(107, 74, 79) 30%);
+    margin: 20px;
+    width: 90%;
+    box-shadow: 5px 5px 10px rgb(75, 72, 72);
+    transform: skew(-10deg)
+
+}

@@ -4,87 +4,6 @@
   margin: 0;
 }
 
-h1 {
-  font-family: "Dancing Script", cursive;
-  color: rgb(250, 250, 250);
-  text-align: left;
-  padding: 25px;
-  font-size: 80px;
-  font-style: oblique;
-  text-shadow: 3px 1px 1px rgb(3, 3, 3);
-}
-
-h2 {
-  font-family: "Raleway", sans-serif;
-  color: rgb(255, 255, 255);
-  border: 10px;
-  padding: 0x;
-  margin: 10px;
-  text-shadow: 3px 1px 1px rgb(0, 0, 0);
-}
-
-.claseBasico {
-  border: 10px solid rgb(0, 0, 0);
-  padding: 10px;
-  margin: 30px;
-}
-
-.boton {
-  border: rgb(0, 0, 0) 3px solid;
-  margin: 20px;
-  padding: 1px;
-  background-color: rgb(227, 252, 252);
-}
-
-.titulo_dos {
-  font-family: "Raleway", sans-serif;
-  color: rgb(255, 255, 255);
-  border: 10px;
-  padding: 0x;
-  margin: 10px;
-  text-shadow: 3px 1px 1px rgb(0, 0, 0);
-}
-
-.bordes_redondeados {
-  border-style: solid 20px rgba(39, 37, 37, 0.993);
-  border-radius: 30px;
-}
-
-.parallax {
-  background-position: 0px 0px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 30rem;
-  max-width: 100%;
-  position: relative;
-}
-
-.parallax_sin_descripcion {
-  background-position: 0px 0px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 10rem;
-  max-width: 100%;
-  position: relative;
-}
-
-.fondo_titulo_sin_descripcion {
-  background-image: url(../imagenes/lapcho_monumento_copia.png);
-  background-size: cover;
-}
-
-.resaltar_pagina {
-  text-decoration: underline;
-}
-
-.caja_traslate {
-  transition: all 0.2s;
-}
-
-.caja_traslate:hover {
-  transform: scale(1.1);
-}
-
 a {
   font-family: "Kiwi Maru", serif;
 }
@@ -135,6 +54,27 @@ a {
   background-size: cover;
 }
 
+.formulario {
+  background-color: rgb(216, 133, 160);
+  display: grid;
+  justify-self: center;
+  padding: 20px;
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 1px 1px rgb(0, 0, 0);
+  border: 10px;
+}
+
+.margen_formulario {
+  margin: 20px;
+}
+
+.tamanio_ancho {
+  width: 30%;
+  display: grid;
+  justify-self: center;
+}
+
 @media (max-width: 576px) {
   .fondo_titulo_sin_descripcion_index {
     display: grid;
@@ -162,10 +102,6 @@ a {
     margin-bottom: 10px;
   }
 }
-body div main h1 {
-  color: rgb(255, 249, 249);
-}
-
 .orden_lugares {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -251,15 +187,15 @@ body div main h1 {
   padding: 30px 50px 20px;
   border: 5px;
   margin: 20px;
+  width: 90%;
   background-color: rgb(104, 73, 100);
   font-family: "Montserrat", sans-serif;
   text-shadow: 3px 1px 1px rgb(8, 8, 8);
   box-shadow: 5px 5px 10px rgb(75, 72, 72);
-  transform: skew(-10deg);
 }
 
 p {
-  color: rgb(219, 169, 217);
+  color: rgb(216, 133, 160);
 }
 
 .borde_abajo_rosarino {
@@ -270,12 +206,13 @@ p {
 .modificacion_rosarinos_izquierda {
   background-color: color-mix(in srgb, rgb(168, 62, 168) 20%, rgb(107, 74, 79) 30%);
   margin: 20px;
+  width: 90%;
   box-shadow: 5px 5px 10px rgb(75, 72, 72);
   transform: skew(-10deg);
 }
 
 .modificacion_carrusel {
-  width: 400px;
+  width: 400spx;
   display: flex;
   margin: auto;
   box-shadow: 5px 5px 10px rgb(48, 46, 46);
@@ -283,23 +220,20 @@ p {
 }
 
 .tamaño_imagen_carrusel {
-  width: 400px;
   height: 300px;
+  width: 400px;
+  display: flex;
 }
 
 .parrafo_gastronomia {
   font-family: "Raleway", sans-serif;
-  color: rgb(22, 21, 22);
+  color: rgb(0, 0, 0);
   padding: 50px;
   margin: 50ppx;
   display: flex;
   margin: auto;
   text-align: center;
   font-size: 30px;
-}
-
-.nva_mia {
-  background-color: color-mix(in srgb, rgb(255, 255, 255) 30%, rgb(255, 192, 203) 50%);
 }
 
 .pie {
@@ -338,6 +272,94 @@ p {
     text-align: start;
     padding: 30px;
   }
+}
+h1 {
+  font-family: "Dancing Script", cursive;
+  color: rgb(250, 250, 250);
+  text-align: left;
+  padding: 25px;
+  font-size: 80px;
+  font-style: oblique;
+  text-shadow: 3px 1px 1px rgb(3, 3, 3);
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  border: 10px;
+  padding: 0x;
+  margin: 10px;
+  text-shadow: 3px 1px 1px rgb(0, 0, 0);
+}
+
+.claseBasico {
+  border: 10px solid rgb(0, 0, 0);
+  padding: 10px;
+  margin: 30px;
+}
+
+.boton {
+  border: rgb(0, 0, 0) 3px solid;
+  margin: 20px;
+  padding: 1px;
+  background-color: rgb(227, 252, 252);
+}
+
+.titulo_dos {
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  border: 10px;
+  padding: 0x;
+  margin: 10px;
+  text-shadow: 3px 1px 1px rgb(0, 0, 0);
+}
+
+.bordes_redondeados {
+  border-style: solid 20px rgba(39, 37, 37, 0.993);
+  border-radius: 30px;
+}
+
+.parallax {
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  max-width: 100%;
+  position: relative;
+}
+
+.parallax_sin_descripcion {
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10rem;
+  max-width: 100%;
+  position: relative;
+}
+
+.fondo_titulo_sin_descripcion {
+  background-image: url(../imagenes/lapcho_monumento_copia.png);
+  background-size: cover;
+}
+
+.resaltar_pagina {
+  text-decoration: underline;
+}
+
+.caja_traslate {
+  transition: all 0.2s;
+}
+
+.caja_traslate:hover {
+  transform: scale(1.1);
+}
+
+body div main h1 {
+  color: rgb(255, 249, 249);
+}
+
+.nva_mia {
+  background-color: color-mix(in srgb, rgb(255, 255, 255) 30%, rgb(255, 192, 203) 50%);
 }
 
 /*# sourceMappingURL=style.css.map */

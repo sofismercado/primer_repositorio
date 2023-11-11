@@ -2,6 +2,15 @@
     padding: 0;
     margin: 0;
 }
+
+@import'../scss/base/variables';
+@import'../scss/componentes/index';
+@import'../scss/componentes/lugares';
+@import'../scss/componentes/cultura';
+@import'../scss/componentes/rosarinos';
+@import'../scss/componentes/gastronomia';
+@import'../scss/componentes/footer';
+
 h1{
    
    
@@ -75,250 +84,15 @@ h2{
 .caja_traslate:hover{
     transform: scale(1.1);
 }
-a{
-    font-family: 'Kiwi Maru', serif
-}
-.fondo_original{
-    background-image: url(../imagenes/lapcho_monumento_copia.png);
-}
-.menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 2rem;
-    margin-bottom: 2rem;   
-} 
-.parrafo_index{
-    font-family: 'Raleway', sans-serif;
-    color: rgb(255, 255, 255); 
-    margin: auto; 
-    padding: 50px;
-   margin: 50ppx;
-    display: flex;
-    margin: auto;
-    text-align: center;
-    font-size: 30px;
-    text-shadow: 3px 1px 3px black; 
-}
-.boton_index{
-    color: rgb(235, 44, 108);
-    font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    height: 250px;
-    width: 250px;
-    text-decoration: none;
-    padding-top: 35%;
-    display: grid;
-    box-shadow: 5px 5px 10px 5px rgb(211, 117, 175);
-    background-color: color-mix(in srgb, lightblue  10%, pink 20%);
-    transition: all 2s;
-    border-radius: 50%;
-}
-.fondo_titulo_sin_descripcion_index{
-    background-image: url(../imagenes/lapcho_monumento_copia.png);
-    background-size: cover;
-    
-}
-@media (max-width: 576px){
-    .fondo_titulo_sin_descripcion_index{
-        display: grid;
-        grid-template-columns:1fr;
-    
-    }
-    .menu{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-       
-    }
-    .boton_index{
-        color: rgb(235, 44, 108);
-        font-family: 'Raleway', sans-serif;
-        font-size:20px;
-        text-align: center;
-        height: 100px;
-        width: 150px;
-        text-decoration: none;
-        padding-top: 10%;
-        display: grid;
-        box-shadow: 5px 5px 10px 5px rgb(211, 117, 175);
-        background-color: color-mix(in srgb, lightblue  10%, pink 20%);
-        transition: all 2s;
-        border-radius: 50%;;  
-        margin: auto;
-        margin-bottom: 10px;
-        
-    }
-}
+
 body div main h1{
     color: rgb(255, 249, 249);
 }
-.orden_lugares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 50px;
-}
-.titulo_centrado{
-    display: grid;
-   justify-self: center;
-}
-.titulo_tarjetas_lugares{
-    font-family: 'Dancing Script', cursive;
-    font-size: 70x;  
-}
-.parrafo_tarjetas_lugares{
-   color: rgb(0, 0, 0);
-      
-}
-.personalizar_tarjetas{
-    background-color: rgb(216, 133, 160);
-    margin-top: 50px;
-    box-shadow: 5px 5px 10px 5px rgb(56, 50, 54);
-}
-@media (max-width: 576px){
-    .orden_lugares{
-        display: grid;
-        grid-template-columns:1fr;
-       align-self: center;
-    
-    }
-   
-}
-.titulo_secundario_cultura{
-    background-color: color-mix(in srgb, rgb(177, 83, 135) 50%, rgb(255, 255, 255) 30%);
-    margin: 0px;
-    padding-left: 50px;
-}
-.clase_cultura{
-    border: 10px solid rgb(255, 255, 255);
-    padding: 10px;
-    margin: 10px;
-}
-.orden{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-}
-.parrafo_cultura{
-    padding: 50px;
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-}
-@media (max-width: 576px){
-    .orden{
-        display: grid;
-        grid-template-columns:1fr;
-    
-    }
-}
-.clase_rosarinos{
-    border: 5px ;
-    padding: 10px;
-    margin: 5px;
-    box-shadow: 5px 5px 10px rgb(126, 37, 37);
-    
-}
-.orden_rosarinos{
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    
-}
-@media(max-width:576px){
-    .orden_rosarinos{
-        display: grid;
-        grid-template-columns:1fr;
-        justify-items: center;
-    
-    }
-}
-.parrafos_rosarinos{
-    padding: 30px 50px 20px;
-    border: 5px; 
-    margin:20px;
-    background-color: rgb(104, 73, 100);
-    font-family: 'Montserrat', sans-serif;
-   text-shadow: 3px 1px 1px rgb(8, 8, 8);
-   box-shadow: 5px 5px 10px rgb(75, 72, 72);
-   transform: skew(-10deg)
 
-   
-}
-p{
-    color: rgb(219, 169, 217);
-}
-.borde_abajo_rosarino{
-    border-top:  5px solid rgb(255, 255, 255);
-    padding-top: 10px;
-}
-.modificacion_rosarinos_izquierda{
-    background-color: color-mix(in srgb, rgb(168, 62, 168) 20%, rgb(107, 74, 79) 30%);
-    margin: 20px;
-    box-shadow: 5px 5px 10px rgb(75, 72, 72);
-    transform: skew(-10deg)
-}
-
-.modificacion_carrusel{
-    width: 400px;
-    display: flex;
-    margin:auto;
-    box-shadow:5px 5px 10px rgb(48, 46, 46); 
-    margin-bottom: 50px;
-    
-}
-.tamaño_imagen_carrusel{
-    width: 400px;
-    height: 300px;
-}
-.parrafo_gastronomia{
-    font-family: 'Raleway', sans-serif;
-    color: rgb(22, 21, 22); 
-    padding: 50px;
-   margin: 50ppx;
-    display: flex;
-    margin: auto;
-    text-align: center;
-    font-size: 30px;
-    
-}
 .nva_mia{
     background-color: color-mix(in srgb, rgb(255, 255, 255) 30%, rgb(255, 192, 203) 50%);
 }
-.pie{
-    background-color: rgb(175, 114, 160);
-    
-}
-.orden_footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
-.mapa{
-    margin: 30px;
-    box-shadow: 3px 3px 3px rgb(0, 0, 0);
-}
-.orden_contactos{
-    color: black;
-}
-
-.pocision_contacto{
-    text-align: end;
-    padding: 50px;
-    
-}
-.lista{
-    list-style: none;
-}
-@media (max-width: 576px){
-    .orden_footer{
-        display: grid;
-        grid-template-columns: 1fr ;
-    }
-    .pocision_contacto{
-       text-align: start;
-        padding: 30px;
-        
-    }
-}
 
 
 
