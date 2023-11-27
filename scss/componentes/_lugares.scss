@@ -20,12 +20,21 @@
     margin-top: 50px;
     box-shadow: 5px 5px 10px 5px rgb(56, 50, 54);
 }
-
-@media (max-width: 576px){
+@media (max-width: 943px){
+    .orden_lugares{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+       align-self: center;
+    
+    }
+   
+}
+@media (max-width: 720px){
     .orden_lugares{
         display: grid;
         grid-template-columns:1fr;
        align-self: center;
+       margin-left: 25%;
     
     }
    

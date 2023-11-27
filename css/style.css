@@ -102,6 +102,33 @@ a {
     margin-bottom: 10px;
   }
 }
+@media (max-width: 1050px) {
+  .fondo_titulo_sin_descripcion_index {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .boton_index {
+    color: rgb(235, 44, 108);
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    height: 150px;
+    width: 200px;
+    text-decoration: none;
+    padding-top: 15%;
+    display: grid;
+    box-shadow: 5px 5px 10px 5px rgb(211, 117, 175);
+    background-color: color-mix(in srgb, lightblue 10%, pink 20%);
+    transition: all 2s;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
 .orden_lugares {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -128,11 +155,19 @@ a {
   box-shadow: 5px 5px 10px 5px rgb(56, 50, 54);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 943px) {
+  .orden_lugares {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+  }
+}
+@media (max-width: 720px) {
   .orden_lugares {
     display: grid;
     grid-template-columns: 1fr;
     align-self: center;
+    margin-left: 25%;
   }
 }
 .titulo_secundario_cultura {
@@ -158,10 +193,20 @@ a {
   font-size: 30px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1076px) {
+  .orden {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    margin-left: 2%;
+  }
+}
+@media (max-width: 750px) {
   .orden {
     display: grid;
     grid-template-columns: 1fr;
+    align-self: center;
+    margin-left: 25%;
   }
 }
 .clase_rosarinos {
@@ -176,11 +221,18 @@ a {
   grid-template-columns: 0.5fr 1fr;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 955px) {
   .orden_rosarinos {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+  }
+  .clase_rosarinos {
+    border: 5px;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 5px 5px 10px rgb(126, 37, 37);
+    width: 50%;
   }
 }
 .parrafos_rosarinos {

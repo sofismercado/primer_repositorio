@@ -3,6 +3,7 @@
     padding: 10px;
     margin: 5px;
     box-shadow: 5px 5px 10px rgb(126, 37, 37);
+  
     
 }
 .orden_rosarinos{
@@ -10,12 +11,20 @@
     grid-template-columns: 0.5fr 1fr;
     
 }
-@media(max-width:576px){
+@media(max-width:955px){
     .orden_rosarinos{
         display: grid;
         grid-template-columns:1fr;
         justify-items: center;
        
+    }
+    .clase_rosarinos{
+        border: 5px ;
+        padding: 10px;
+        margin: 5px;
+        box-shadow: 5px 5px 10px rgb(126, 37, 37);
+      width: 50%;
+        
     }
    
     

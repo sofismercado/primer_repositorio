@@ -18,10 +18,19 @@
     color: rgb(0, 0, 0);
     font-size: 30px;
 }
-@media (max-width: 576px){
+@media (max-width: 1076px){
     .orden{
         display: grid;
-        grid-template-columns:1fr;
-    
+        grid-template-columns:1fr 1fr;
+        align-self: center;
+        margin-left: 2%;
+    }
+}
+@media (max-width: 750px){
+    .orden{
+        display: grid;
+        grid-template-columns:1fr ;
+        align-self: center;
+        margin-left: 25%;
     }
 }

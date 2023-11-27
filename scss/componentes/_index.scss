@@ -63,6 +63,7 @@ a{
     justify-self: center;
 }
 
+
 @media (max-width: 576px){
     .fondo_titulo_sin_descripcion_index{
         display: grid;
@@ -83,6 +84,35 @@ a{
         width: 150px;
         text-decoration: none;
         padding-top: 10%;
+        display: grid;
+        box-shadow: 5px 5px 10px 5px rgb(211, 117, 175);
+        background-color: color-mix(in srgb, lightblue 10%, pink 20%);
+        transition: all 2s;
+        border-radius: 50%;
+        margin: auto;
+        margin-bottom: 10px;
+      }
+} 
+@media (max-width: 1050px){
+    .fondo_titulo_sin_descripcion_index{
+        display: grid;
+        grid-template-columns:1fr;
+    
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+    }
+    .boton_index {
+        color: $bg-vio;
+        font-family: "Raleway", sans-serif;
+        font-size: 20px;
+        text-align: center;
+        height: 150px;
+        width: 200px;
+        text-decoration: none;
+        padding-top: 15%;
         display: grid;
         box-shadow: 5px 5px 10px 5px rgb(211, 117, 175);
         background-color: color-mix(in srgb, lightblue 10%, pink 20%);
